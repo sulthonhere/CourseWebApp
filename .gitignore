@@ -2,4 +2,5 @@ api-gateway/node_modules
 api-gateway/.env
 
 media-services/node_modules
+media-services/public/images
 media-services/.env
