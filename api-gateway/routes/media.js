@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET media listing. */
 router.get('/', function(req, res, next) {
-  res.send('users');
+  res.send('media');
 });
 
 module.exports = router;
