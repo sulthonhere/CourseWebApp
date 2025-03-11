@@ -14,7 +14,7 @@ router.get('/', async (req, res) => {
   });
 
   const mappedMedia = media.map( (m) => {
-    m.image = `${req.get('host')}.${m.image}`;
+    m.image = `${req.get('host')}/${m.image}`;
     return m;
   });
 
@@ -72,7 +72,7 @@ router.delete('/:id', async (req, res) => {
       message: 'image deleted'
     });
   });
-  
+
 });
 
 module.exports = router;
