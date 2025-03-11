@@ -1,23 +1,23 @@
 module.exports = (sequelize, DataTypes) => {
     const Media = sequelize.define('Media', {
         id: {
-            type: Sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
             allowNull: false
         },
         image: {
-            type: Sequelize.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         createdAt: {
-            filed: 'created_at',
-            type: Sequelize.DATE,
+            field: 'created_at',
+            type: DataTypes.DATE,
             allowNull: false
         },
         updatedAt: {
-            filed: 'updated_at',
-            type: Sequelize.DATE,
+            field: 'updated_at',
+            type: DataTypes.DATE,
             allowNull: false
         }
     }, {
