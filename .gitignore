@@ -4,3 +4,6 @@ api-gateway/.env
 media-services/node_modules
 media-services/public/images
 media-services/.env
+
+user-services/node_modules
+user-services/.env
