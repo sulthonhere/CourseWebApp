@@ -1,7 +1,3 @@
-const bcrypt = require('bcrypt');
-const Validator = require('fastest-validator');
-const v = new Validator();
-
 const { User } = require('../../../models');
 
 module.exports = async (req, res) => {
@@ -16,11 +12,11 @@ module.exports = async (req, res) => {
             id: userIds
         }
     }
-
+    
     const users = await User.findAll(sqlOptions);
 
     return res.json({
         status: 'success',
-        data: users
+        data: users,
     });
 }
