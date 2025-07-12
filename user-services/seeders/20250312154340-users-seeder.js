@@ -10,7 +10,7 @@ module.exports = {
         profession: 'Admin Botcamp',
         role: 'admin',
         email: 'widada@gmail.com',
-        password: await bcrypt.hash('123', 10),
+        password: await bcrypt.hash('123123', 10),
         created_at: new Date(),
         updated_at: new Date()
       }, {
@@ -18,7 +18,7 @@ module.exports = {
         profession: 'Back End Developer',
         role: 'student',
         email: 'septinus@gmail.com',
-        password: await bcrypt.hash('123', 10),
+        password: await bcrypt.hash('12341234', 10),
         created_at: new Date(),
         updated_at: new Date()
       }
